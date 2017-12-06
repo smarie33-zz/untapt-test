@@ -16,7 +16,7 @@ react.js test for untapt including gulp, static server, sass
 + Removing items from the basket adds them back to the list incase there was a mistake
 + Items can be deleted from the list
 + You can remove users from individual items
-+ Removing a users removes the name from all associated items, (in the list and in the basket)
++ Removing a user removes the name from all associated items, (in the list and in the basket)
 
 ## Original task:
 ### The Grocery List App
