@@ -1,0 +1,103 @@
+body{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: $default-fontsize;
+	margin: 0;
+	padding: 0
+}
+
+h1, h2{
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+ul{
+	list-style-type: none;
+	    padding: 0 $overallPadding;
+	cursor: pointer;
+
+	li{
+		margin-bottom:10px;
+	 	div{
+	 		display: inline-block;
+	 		input{
+	 			padding: $overallPadding;
+	 			margin: 0 $overallPadding;
+	 			font-size: $default-fontsize;
+	 		}
+	 	}
+	}
+}
+
+.button{
+	@include button();
+	&.float-right{
+		float:right
+	}
+}
+.button.assign-here{
+	@include button($blue);
+}
+.#{$prefix}remove-assigned.button{
+	@include button($blue, $white, 0);
+	padding:0 $overallPadding;
+}
+
+.#{$prefix}entire-app{
+	max-width: 800px;
+	margin: auto;
+	position: relative;
+	padding-top: 30px;
+}
+.#{$prefix}list-container{
+	float:left;
+	width: 60%;
+	height: 100%;
+	border-right: 1px solid black;
+	@media screen and (max-width: $breakpoint-size-md){
+		width: 100%;
+		height: auto;
+		padding-bottom: 30px;
+		border-right: none;
+		border-bottom: 1px solid black;
+	} 
+}
+.#{$prefix}user-container{
+	float:left;
+	width: 39%;
+	@media screen and (max-width: $breakpoint-size-md){
+		width: 100%;
+	} 
+}
+.#{$prefix}error{
+	color: $red;
+}
+.#{$prefix}item{
+	border-bottom: 1px solid $gray;
+    padding: 5px;
+}
+.#{$prefix}add{
+	padding-top: 30px;
+}
+.#{$prefix}remove-item {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.#{$prefix}amount{
+	font-weight: bold;
+	padding: 0 $overallPadding;
+}
+.#{$prefix}amount-input{
+	padding-left: 10px;
+}
+.#{$prefix}user-name{
+	padding-left: $overallPadding;
+}
+.#{$prefix}user{
+	padding:  $overallPadding;
+}
+.#{$prefix}assigned-user{
+	display: block;
+    padding: $overallPadding;
+    background-color: $blue;
+    margin-top: $overallPadding;
+}
