@@ -4,7 +4,7 @@ react.js test for untapt including gulp, static server, sass
 ## How to:
 1. `$npm install`
 2. `$npm run start`
-3. navigate to [ttp://localhost:8080/](http://localhost:8080/) in your browser
+3. navigate to [http://localhost:8080/](http://localhost:8080/) in your browser
 
 ## Users can:
 1. Add items (i.e. _Strawberries_) and associated quantities (i.e. _3_) to a shopping list
